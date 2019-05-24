@@ -1,6 +1,6 @@
 {
 	"name": "capthook",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A CLS like library to keep track of your asynchronous contexts",
 	"main": "dist/index.js",
 	"license": "MIT",
