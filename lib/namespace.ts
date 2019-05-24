@@ -8,10 +8,10 @@ export default class Namespace {
 
 	construct() {}
 
-	run(callback: Function) {
+	run(callback: Function, data: ContextData = new Map() as ContextData) {
 		const executionId: number = asyncHooks.executionAsyncId()
 
-		this.contexts.set(executionId, new Map())
+		this.contexts.set(executionId, data)
 		callback()
 	}
 
